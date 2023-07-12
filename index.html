@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <h1 id="titulo">oi mel</h1>
+      <button id="btn" onclick="nextText()">clique aqui</button>
+    </div>
+    
+    <script>
+      function nextText() {
+        var titulo = document.getElementById("titulo");
+        var botao = document.getElementById("btn");
+    
+        if (titulo.innerText === "oi mel") {
+          titulo.innerText = "você é incrivel, eu te amo e te admiro muito!";
+          botao.innerText = "Voltar";
+        } else {
+          titulo.innerText = "oi mel";
+          botao.innerText = "Clique aqui";
+        }
+      }
+    </script>
+  </body>
+</html>
